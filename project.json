@@ -94,20 +94,6 @@
       },
       {
         "editingStatus": "Publishable",
-        "testCaseId": "5e479028-86d2-4cf9-abe2-1017f74264f2",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TestCase_GetImageFromApiDog.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
-        "testCaseId": "0d7e9ce4-bdc3-4cab-8564-b6822470839a",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Tests\\TestCase_GetImageFromApiCat.xaml"
-      },
-      {
-        "editingStatus": "Publishable",
         "testCaseId": "489706d0-26e3-4074-b0dc-c90b246bc025",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,

@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="TestCase_DeletePicture" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1198.6666666666667,1086.6666666666667" sap2010:WorkflowViewState.IdRef="TestCase_DeletePicture_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="TestCase_DeletePicture" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="558.6666666666666,1086.6666666666667" sap2010:WorkflowViewState.IdRef="TestCase_DeletePicture_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -85,7 +85,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ServiceLayer\GetImageFromApiDog.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ServiceLayer\GetImageFromApiDog.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="GetImageFromApi.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_3" UnSafe="False" WorkflowFileName="ServiceLayer\GetImageFromApi.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="in_Field">
             <Literal x:TypeArguments="x:String">message</Literal>
@@ -107,9 +107,7 @@
       </sap:WorkflowViewStateService.ViewState>
       <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="DataLayer\DeletePicture.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="DataLayer\DeletePicture.xaml">
         <ui:InvokeWorkflowFile.Arguments>
-          <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">
-            <Literal x:TypeArguments="x:String">C:\Users\MateiColdea\Documents\UiPath\MateiColdea-fwf-api-animal-poc-performer\Data\Temp\Picture.png</Literal>
-          </InArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">C:\Users\MateiColdea\Documents\UiPath\MateiColdea-fwf-api-animal-poc-performer\Data\Temp\Picture.png</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>

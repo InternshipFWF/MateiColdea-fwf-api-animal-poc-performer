@@ -6,7 +6,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>1198.6666666666667,817.3333333333334</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>558.6666666666666,630.6666666666666</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ProcessEmil_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -96,10 +96,18 @@
     </ui:InvokeWorkflowFile>
     <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Send Email - Process Emails" sap:VirtualizedContainerService.HintSize="388,115.33333333333333" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ServiceLayer\SendEmail.xaml">
       <ui:InvokeWorkflowFile.Arguments>
-        <InArgument x:TypeArguments="x:String" x:Key="in_EmailTo">matei.coldea@fwfcompany.com</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">[in_Config("Email_Subject").ToString]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_EmailBody">[in_Config("Email_Body").ToString]</InArgument>
-        <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">[in_Config("PictureShortPath").ToString]</InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_EmailTo">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="Email" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_EmailSubject">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Email_Subject&quot;).ToString" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_EmailBody">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;Email_Body&quot;).ToString" />
+        </InArgument>
+        <InArgument x:TypeArguments="x:String" x:Key="in_FilePath">
+          <VisualBasicValue x:TypeArguments="x:String" ExpressionText="in_Config(&quot;PictureShortPath&quot;).ToString" />
+        </InArgument>
       </ui:InvokeWorkflowFile.Arguments>
     </ui:InvokeWorkflowFile>
   </Sequence>
