@@ -8,7 +8,7 @@
   <VisualBasic.Settings>
     <x:Null />
   </VisualBasic.Settings>
-  <sap:VirtualizedContainerService.HintSize>704.6666666666666,1809.3333333333333</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>704.6666666666666,1882.6666666666667</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>GetImageFromApi_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
@@ -103,7 +103,7 @@
       <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="GetImageFromApi" sap:VirtualizedContainerService.HintSize="714.6666666666666,1744.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="GetImageFromApi" sap:VirtualizedContainerService.HintSize="714.6666666666666,1818" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="result" />
       <Variable x:TypeArguments="njl:JArray" Name="JsonRespArray" />
@@ -114,20 +114,20 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Log Message- Get Image from API" sap:VirtualizedContainerService.HintSize="652.6666666666666,144.66666666666666" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Get Image from API&quot;]" />
-    <TryCatch DisplayName="Try Catch- Get ImageAPi" sap:VirtualizedContainerService.HintSize="652.6666666666666,1449.3333333333333" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+    <ui:LogMessage DisplayName="Log Message- Get Image from API" sap:VirtualizedContainerService.HintSize="652.6666666666666,143.33333333333334" sap2010:WorkflowViewState.IdRef="LogMessage_1" Message="[&quot;Get Image from API&quot;]" />
+    <TryCatch DisplayName="Try Catch- Get ImageAPi" sap:VirtualizedContainerService.HintSize="652.6666666666666,1524" sap2010:WorkflowViewState.IdRef="TryCatch_2">
       <TryCatch.Try>
-        <ui:RetryScope DisplayName="Retry Get transaction item" sap:VirtualizedContainerService.HintSize="614,1210.6666666666667" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[Cint(in_NumberOfRetries)]">
+        <ui:RetryScope DisplayName="Retry Get API item" sap:VirtualizedContainerService.HintSize="614,1288" sap2010:WorkflowViewState.IdRef="RetryScope_2" NumberOfRetries="[Cint(in_NumberOfRetries)]">
           <ui:RetryScope.ActivityBody>
             <ActivityAction>
-              <Sequence DisplayName="Downloading Sequence" sap:VirtualizedContainerService.HintSize="572,1032" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Downloading Sequence" sap:VirtualizedContainerService.HintSize="572,1030.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request - Get Cat Image from API" EnableSSLVerification="True" EndPoint="[in_Url.ToString]" sap:VirtualizedContainerService.HintSize="510,72" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[result]" TimeoutMS="6000">
+                <ui:HttpClient Body="{x:Null}" ClientCertificate="{x:Null}" ClientCertificatePassword="{x:Null}" ConsumerKey="{x:Null}" ConsumerSecret="{x:Null}" ContinueOnError="{x:Null}" FileAttachments="{x:Null}" OAuth1Token="{x:Null}" OAuth1TokenSecret="{x:Null}" OAuth2Token="{x:Null}" Password="{x:Null}" ResourcePath="{x:Null}" ResponseAttachment="{x:Null}" ResponseHeaders="{x:Null}" SecureClientCertificatePassword="{x:Null}" SecurePassword="{x:Null}" StatusCode="{x:Null}" Username="{x:Null}" AcceptFormat="ANY" AuthenticationType="None" BodyFormat="application/xml" DisplayName="HTTP Request - Get Cat Image from API" EnableSSLVerification="True" EndPoint="[in_Url.ToString]" sap:VirtualizedContainerService.HintSize="510,71.33333333333333" sap2010:WorkflowViewState.IdRef="HttpClient_1" Method="GET" Result="[result]" TimeoutMS="6000">
                   <ui:HttpClient.Attachments>
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.Attachments>
@@ -144,7 +144,7 @@
                     <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
                   </ui:HttpClient.UrlSegments>
                 </ui:HttpClient>
-                <If Condition="[in_Field.Equals(&quot;url&quot;)]" DisplayName="If : Choosing the API type" sap:VirtualizedContainerService.HintSize="510,697.3333333333334" sap2010:WorkflowViewState.IdRef="If_2">
+                <If Condition="[in_Field.Equals(&quot;url&quot;)]" DisplayName="If : Choosing the API type" sap:VirtualizedContainerService.HintSize="510,696.6666666666666" sap2010:WorkflowViewState.IdRef="If_2">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
